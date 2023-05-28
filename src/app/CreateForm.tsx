@@ -9,7 +9,7 @@ export default function CreateForm() {
 
 	const router = useRouter();
 
-	const handleClick = async (e: string) => {	
+	const handleClick = async (e: React.FormEvent) => {	
 		e.preventDefault();
 		try {
 			const response = await fetch('http://localhost:8080/api/b', {
